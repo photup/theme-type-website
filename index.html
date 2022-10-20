@@ -29,37 +29,45 @@
 
 <body>
   <section class="area-cover p-4 container max-w-[1000px] pt-[120px]">
-    <h1 class="color-tblack text-center text-[40px]">Theme Type</h1>
+    <h1 class="color-tblack text-center text-[32px]">Theme Type for Hexo</h1>
     <div class="flex flex-col md:flex-row justify-center items-center">
       <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#5EFCE8] to-[#736EFE]">Pretty.</span>
       <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#736EFE] to-[#FAD7A1]">Cosily.</span>
       <span class="font-[900] text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#FAD7A1] to-[#E96D71]">Fastly.</span>
     </div>
-    <div class="p-4 gap-8 flex flex-col md:flex-row justify-center items-center">
-      <div class="action-btn">
+    <div class="p-4 gap-8 grid flex-col md:flex-row justify-center items-center grid-cols-1 md:grid-cols-3">
+      <div class="action-btn hover:drop-shadow-xl transition-all">
         <div class='border-bg bg-1'></div>
-        <span>Get Start</span>
-        <a href="#start" class="action-link"></a>
+        <span>Features</span>
+        <a href="" class="action-link"></a>
       </div>
-      <div class="action-btn">
+      <div class="action-btn hover:drop-shadow-xl transition-all">
         <div class='border-bg bg-2'></div>
-        <span>Github Repository</span>
+        <span>Code</span>
         <a href="https://github.com/aiokr/Hexo-Theme-Type" target="_blank" class="action-link"></a>
       </div>
-      <div class="action-btn">
+      <div class="action-btn hover:drop-shadow-xl transition-all">
         <div class='border-bg bg-3'></div>
         <span>Docs</span>
         <a href="https://docs.tripper.press/type/" target="_blank" class="action-link"></a>
       </div>
+      <code class="action-btn text-gray-400 col-span-1 md:col-span-3">
+        <div class='border-bg bg-code'></div>
+        <span class="text-[#736EFE]">npm install </span>hexo-theme-type <span class="text-[#E96D71]">--save</span>
+      </code>
     </div>
     <div class="p-4 text-center">
       <img class="" src="https://img.shields.io/github/v/release/aiokr/hexo-theme-type?style=flat-square&label=Release&logo=github" alt="version">
       <img class="" src="https://img.shields.io/github/workflow/status/aiokr/hexo-theme-type/Hexo-Theme-Type%20auto%20test/dev?label=test&logo=github&style=flat-square" alt="test">
+      <img src="https://img.shields.io/npm/dm/hexo-theme-type?logo=npm&style=flat-square&label=Downloads" alt="downloads">
+    </div>
+    <div class="p-4 my-[0] mx-auto text-center">
+
     </div>
   </section>
   <style>
     body {
-      background-color: #FAFBFB !important;
+      background-color: #fff !important;
       --main-color: #71afdd;
       font-family: "SF Pro Display", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
     }
@@ -78,7 +86,6 @@
       position: relative;
       background-color: #fff;
       background-clip: padding-box;
-      width: 240px;
       height: 46px;
       text-align: center;
       line-height: 46px;
@@ -121,6 +128,10 @@
 
     .bg-3 {
       background: linear-gradient(to right, #FAD7A1, #E96D71);
+    }
+
+    .bg-code {
+      background: linear-gradient(to right, #CCCCCC, #F3F3F3);
     }
   </style>
 </body>
